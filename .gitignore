@@ -10,6 +10,7 @@ frontend/coverage
 frontend/build
 frontend/.vscode
 frontend/.yarnclean
+
 # misc
 .DS_Store
 .env.local
