@@ -13,7 +13,7 @@ RUN export GOOS=$(echo ${TARGETPLATFORM} | cut -d / -f1) && \
 
 # Prepare and enter src directory
 WORKDIR /go/src/github.com/signoz/signoz/pkg/processors/flattener
-
+ 
 # Cache dependencies
 ADD go.mod .
 ADD go.sum .
