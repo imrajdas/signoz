@@ -58,14 +58,13 @@ jobs:
       - name: Frontend checks
         shell: bash
         run: |
-          cd frontend
-          make frontend-services-checks
+          make frontend-service-checks
 
   build-frontend:
     runs-on: ubuntu-latest
     needs:
       - get_filters
-      - frontend-services-checks
+      - frontend-checks
     if: ${{ needs.get_filters.outputs.frontend == 'true' }}
     steps:
       - name: Checkout code
