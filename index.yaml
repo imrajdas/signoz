@@ -1,0 +1,36 @@
+apiVersion: v1
+entries:
+  flattener-processor:
+  - apiVersion: v2
+    appVersion: 0.3.6
+    created: "2021-09-11T18:12:18.674346+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 37c982787e4c58b98cff45b5664f4b7eaf1ff84cc4eccd5f6ebe509fdf5dd477
+    name: flattener-processor
+    type: application
+    urls:
+    - flattener-processor/flattener-processor-0.3.6.tgz
+    version: 0.3.6
+  frontend:
+  - apiVersion: v2
+    appVersion: 0.3.6
+    created: "2021-09-11T18:12:18.674629+05:30"
+    description: A Helm chart for SigNoz Frontend Service
+    digest: 04df61f97135b9f7196ea5ff614ad3f3a91bae11accc5f3b936d1411f97f9f5b
+    name: frontend
+    type: application
+    urls:
+    - frontend/frontend-0.3.6.tgz
+    version: 0.3.6
+  query-service:
+  - apiVersion: v2
+    appVersion: 0.3.6
+    created: "2021-09-11T18:12:18.67488+05:30"
+    description: A Helm chart for running SigNoz Query Service in Kubernetes
+    digest: 57d1ab7a8acecbff4ebb21cd8dca314b09dc9e50d7cbd8a3dfc813abe8b87f23
+    name: query-service
+    type: application
+    urls:
+    - query-service/query-service-0.3.6.tgz
+    version: 0.3.6
+generated: "2021-09-11T18:12:18.6737+05:30"
