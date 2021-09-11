@@ -1,0 +1,20 @@
+name: push-pipeline
+on:
+  push:
+    branches:
+      - main
+jobs:
+  publish-helm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build & Push Frontend Docker Image
+        shell: bash
+        env:
+          GITHUB_PAGES_REPO: rajdas98/signoz
+        run: |
+          apk update
+          apk add bash openssl
+          bash .github/helm-publish.sh
