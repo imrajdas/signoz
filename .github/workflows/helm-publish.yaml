@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - helm-gh-pages
 jobs:
   publish-helm:
     runs-on: ubuntu-latest
