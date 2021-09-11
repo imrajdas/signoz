@@ -16,6 +16,6 @@ jobs:
         env:
           GITHUB_PAGES_REPO: rajdas98/signoz
         run: |
-          apt-get update
-          apt-get install bash openssl
+          sudo apt-get update
+          sudo apt-get install bash openssl
           bash .github/helm-publish.sh
