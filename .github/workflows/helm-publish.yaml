@@ -15,6 +15,7 @@ jobs:
         shell: bash
         env:
           GITHUB_PAGES_REPO: rajdas98/signoz
+          GITHUB_BRANCH: main
         run: |
           sudo apt-get update
           sudo apt-get install bash openssl
