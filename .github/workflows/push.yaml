@@ -125,11 +125,8 @@ jobs:
         run: |
           branch=${GITHUB_REF#refs/*/}
           array=(`echo ${GITHUB_REF} | sed 's/\//\n/g'`)
-#          if [ $branch == "main" ] || [ ${array[1]} == "tags" ] || [ ${array[1]} == "pull" ] ||[[ $branch =~ ^v[0-9]*.[0-9]*.x$ ]]
-#          then
           source env-vars
           make build-push-query-service
-#          fi
 
   build-and-push-flattener:
     runs-on: ubuntu-latest
